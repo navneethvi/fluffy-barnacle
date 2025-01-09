@@ -1,10 +1,10 @@
-
-let a = 10;
 console.log(a);
 
+var a = 10;
 
-for(var i=0;i<5;i++){
-    setTimeout(()=>{
-        console.log(i);
-    })
+sayHello()
+
+function sayHello(){
+    console.log("Hello");
+    
 }
