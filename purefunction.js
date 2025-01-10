@@ -16,3 +16,25 @@ function toUpperCase(str){
 const string = "navaneeth v"
 
 console.log(toUpperCase(string));
+
+// =============================================================================================
+
+// Impure func
+function addElementToArray(arr, element) {
+    arr.push(element); 
+}
+
+const numbers = [1, 2, 3];
+addElementToArray(numbers, 4);
+
+console.log("impure",numbers); 
+
+// Pure func
+function addElementToArrayPure(arr, element){
+    return [...arr, element]
+}
+
+const numbers2 = [1, 2, 3];
+const newNumbers = addElementToArrayPure(numbers2, 4);
+console.log(numbers2);
+console.log(newNumbers);
