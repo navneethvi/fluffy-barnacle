@@ -14,6 +14,8 @@ const fn = async () => {
 
 fn()
 
+
+
 console.log("Second");
 
 
